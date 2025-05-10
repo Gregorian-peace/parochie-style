@@ -1,3 +1,48 @@
-.title {
-    color: green;
+body {
+  background: #f7f6f2;
+  margin: 0;
+  padding: 2rem;
+  text-align: center;
+}
+
+.intro {
+  font-size: 1.2rem;
+  margin-bottom: 2rem;
+  color: #555;
+}
+
+.grid {
+  display: grid;
+  gap: 1rem;
+  grid-template-columns: 1fr;
+  max-width: 600px;
+  margin: 0 auto;
+}
+
+.tile {
+  background: white;
+  border-radius: 10px;
+  padding: 1.2rem 1rem;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+  text-decoration: none;
+  color: #2c3e50;
+  font-weight: 500;
+  font-size: 1.05rem;
+  transition: background 0.3s ease;
+}
+
+.tile:hover {
+  background: #e2e6ea;
+}
+
+.quote {
+  margin-top: 3rem;
+  font-style: italic;
+  color: #666;
+}
+
+@media (min-width: 600px) {
+  .grid {
+    grid-template-columns: 1fr 1fr;
+  }
 }
